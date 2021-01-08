@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C83F7DEE25A8A03F0058DC3A /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83F7DED25A8A03F0058DC3A /* CustomView.swift */; };
 		C844D20125A71E9B00240F7D /* V2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844D20025A71E9B00240F7D /* V2VC.swift */; };
 		C844D20725A7235800240F7D /* CountryCellV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844D20625A7235800240F7D /* CountryCellV2.swift */; };
 		C844D20A25A7236F00240F7D /* DeleteCellV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844D20925A7236F00240F7D /* DeleteCellV2.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C83F7DED25A8A03F0058DC3A /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C844D20025A71E9B00240F7D /* V2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2VC.swift; sourceTree = "<group>"; };
 		C844D20625A7235800240F7D /* CountryCellV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellV2.swift; sourceTree = "<group>"; };
 		C844D20925A7236F00240F7D /* DeleteCellV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCellV2.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C83F7DEC25A8A00F0058DC3A /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				C83F7DED25A8A03F0058DC3A /* CustomView.swift */,
+			);
+			path = AnimationView;
+			sourceTree = "<group>";
+		};
 		C845499B25A66E7300FE6A66 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		C84549A625A66E7300FE6A66 /* Liberty_APP */ = {
 			isa = PBXGroup;
 			children = (
+				C83F7DEC25A8A00F0058DC3A /* AnimationView */,
 				C84549BF25A66EBC00FE6A66 /* Files */,
 				C84549BE25A66EA600FE6A66 /* ViewControllers */,
 				C84549BD25A66E9100FE6A66 /* StoryBoards */,
@@ -187,6 +198,7 @@
 				C844D20A25A7236F00240F7D /* DeleteCellV2.swift in Sources */,
 				C844D20125A71E9B00240F7D /* V2VC.swift in Sources */,
 				C84549AC25A66E7300FE6A66 /* V1VC.swift in Sources */,
+				C83F7DEE25A8A03F0058DC3A /* CustomView.swift in Sources */,
 				C84549A825A66E7300FE6A66 /* AppDelegate.swift in Sources */,
 				C84549CB25A670F200FE6A66 /* CountryCell.swift in Sources */,
 				C844D20725A7235800240F7D /* CountryCellV2.swift in Sources */,

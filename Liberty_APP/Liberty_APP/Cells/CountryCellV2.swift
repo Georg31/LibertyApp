@@ -13,7 +13,6 @@ class CountryCellV2: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         self.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5

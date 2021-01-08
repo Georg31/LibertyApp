@@ -10,7 +10,12 @@ import UIKit
 class V1VC: UIViewController {
     
     @IBOutlet weak var newCountryTextF: UITextField!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!{
+        didSet{
+            collectionView.dataSource = self
+            collectionView.delegate = self
+        }
+    }
     
     var searching = false
     var countries = [String]()
@@ -18,10 +23,10 @@ class V1VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         data = countries
+        let customV = CustomView(frame: self.view.frame)
+        self.view.addSubview(customV)
     }
     
     @IBAction func AddButton(_ sender: UIButton) {
@@ -34,6 +39,7 @@ class V1VC: UIViewController {
             collectionView.reloadData()
         }
     }
+    
     @IBAction func Search(_ sender: UITextField) {
         if sender.text!.isEmpty{
             searching = false
@@ -52,6 +58,7 @@ class V1VC: UIViewController {
     }
     
 }
+
 
 extension V1VC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     

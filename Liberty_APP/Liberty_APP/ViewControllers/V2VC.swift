@@ -15,6 +15,7 @@ class V2VC: UIViewController {
             tableView1.dataSource = self
         }
     }
+    
     @IBOutlet weak var tableView2: UITableView!{
         didSet{
             tableView2.delegate = self
@@ -30,6 +31,7 @@ class V2VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     
@@ -58,8 +60,6 @@ class V2VC: UIViewController {
         tableView2.reloadData()
     }
     
-    
-    
 }
 
 
@@ -78,9 +78,7 @@ extension V2VC: UITableViewDelegate, UITableViewDataSource{
         case tableView2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DeleteCellV2", for: indexPath) as! DeleteCellV2
             return cell
-            
         default: return UITableViewCell(frame: CGRect())
-            
         }
     }
     
